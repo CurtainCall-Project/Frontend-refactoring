@@ -4,10 +4,15 @@ import reset from "styled-reset";
 const GlobalStyles = createGlobalStyle`
   ${reset}
 
-  body {
-    font-family: "Noto Sans", sans-serif;
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+  * {
+    font-family: "Noto Sans KR", sans-serif;
     font-size: ${({theme}) => theme.fontSize.base};
-    color: #000;
+    font-weight: 400;
+  }
+
+  body {    
     width: 100%;
     height: 100%;
     @media ${({theme}) => theme.device.tablet} {
@@ -35,6 +40,11 @@ const GlobalStyles = createGlobalStyle`
   
   section {
     padding-bottom: 79px;
+  }
+
+  button {
+    cursor: pointer;
+    font-size: 1rem;
   }
 `;
 
