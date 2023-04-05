@@ -10,5 +10,7 @@ export const Form = styled.form`
 `;
 
 export const Input = styled.input`
+  margin-left: 2px;
   border: none;
+  font-size: 1rem;
 `;

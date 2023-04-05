@@ -18,7 +18,5 @@ export const RightWrap = styled.div`
 `;
 
 export const Logo = styled(Image)`
-  width: 172px;
-  height: 30px;
-  vertical-align: middle;
+  display: block;
 `;

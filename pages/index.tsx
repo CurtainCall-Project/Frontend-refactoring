@@ -18,8 +18,6 @@ export default function Home() {
       </Head>
       <main>
         <Header />
-        <EnrollBtn />
-        <DeleteBtn />
       </main>
     </>
   );
