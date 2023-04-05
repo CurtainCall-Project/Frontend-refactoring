@@ -3,6 +3,7 @@ import Image from "next/image";
 import {Inter} from "next/font/google";
 import EnrollBtn from "@/components/button/EnrollBtn";
 import DeleteBtn from "@/components/button/DeleteBtn";
+import Header from "@/components/header/Header";
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -16,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        hi
+        <Header />
         <EnrollBtn />
         <DeleteBtn />
       </main>
