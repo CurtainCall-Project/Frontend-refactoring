@@ -1,3 +1,12 @@
+interface LinkInfo {
+  pathname: string;
+  label: string;
+}
+
+interface NavigationLinkInfo {
+  [key: string]: LinkInfo[];
+}
+
 export const boardLinkInfo = [
   {
     pathname: "/free",
@@ -67,10 +76,12 @@ export const writeLinkInfo = [
   },
 ];
 
-export const navigationInfo = {
+const navigationInfo: NavigationLinkInfo = {
   게시판: boardLinkInfo,
   마켓: marketLinkInfo,
   공연후기: reviewLinkInfo,
   마이페이지: myPageLinkInfo,
   글쓰기: writeLinkInfo,
 };
+
+export default navigationInfo;

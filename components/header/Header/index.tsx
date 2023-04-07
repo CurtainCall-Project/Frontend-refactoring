@@ -1,14 +1,12 @@
-import React from "react";
 import Topbar from "../Topbar";
-import {Container} from "./style";
-import Menu from "../Menu";
+import Navbar from "../Navbar";
 
 function Header() {
   return (
-    <Container>
+    <section>
       <Topbar />
-      <Menu />
-    </Container>
+      <Navbar />
+    </section>
   );
 }
 

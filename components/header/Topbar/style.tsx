@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Container = styled.header`
   height: 3rem;
-  padding: 0 3rem;
+  padding: 0 5rem;
   background-color: ${({theme}) => theme.colors.lightPurple};
   display: flex;
   justify-content: space-between;
