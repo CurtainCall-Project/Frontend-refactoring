@@ -1,10 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import {Inter} from "next/font/google";
-import EnrollBtn from "@/components/button/EnrollBtn";
-import DeleteBtn from "@/components/button/DeleteBtn";
 import Header from "@/components/header/Header";
-
+import Footer from "@/components/Footer/Index";
 const inter = Inter({subsets: ["latin"]});
 
 export default function Home() {
@@ -18,6 +16,7 @@ export default function Home() {
       </Head>
       <main>
         <Header />
+        <Footer />
       </main>
     </>
   );
