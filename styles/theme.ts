@@ -7,12 +7,12 @@ const colors = {
   purple: "#6166b3",
   lightPurple: "#baabda",
   white: "#ffffff",
-  navInnerMenuGray: "#fafafa",
+  navGray: "#fafafa",
   textGray: "#595858",
-  borderGray: "#eaeaea",
+  whiteGray: "#eaeaea",
   lightGray: "#f0f0f0",
-  darkGray: "#e1e1e1",
-  inputGray: "#dbdbdb",
+  gray: "#e1e1e1",
+  darkGray: "#dbdbdb",
 };
 
 const fontSize = {
