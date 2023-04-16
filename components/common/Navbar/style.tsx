@@ -1,8 +1,14 @@
 import styled from "styled-components";
 
+export const Nav = styled.nav`
+  @media ${({theme}) => theme.device.tablet} {
+    display: none;
+  }
+`;
+
 export const Topbar = styled.ul`
   height: 50px;
-  padding: 0 5rem;
+  padding: 0 8rem;
   border-bottom: 1px solid ${({theme}) => theme.colors.whiteGray};
   display: flex;
   justify-content: space-between;
@@ -15,10 +21,10 @@ export const Topbar = styled.ul`
 `;
 
 export const Title = styled.li`
-  cursor: pointer;
   display: block;
   line-height: 44px;
   padding: 0 8px;
+  cursor: default;
 
   &:hover {
     color: ${({theme}) => theme.colors.purple};

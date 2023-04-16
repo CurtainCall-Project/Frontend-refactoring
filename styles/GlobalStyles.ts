@@ -31,6 +31,10 @@ const GlobalStyles = createGlobalStyle`
   ul {
     list-style: none;
   }
+  
+  li {
+    list-style-type: none;
+  }
 
   .wrapper {
     min-height: 100vh;

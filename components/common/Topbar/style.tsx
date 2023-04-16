@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Container = styled.header`
   height: 3rem;
-  padding: 0 5rem;
+  padding: 0 8rem;
   background-color: ${({theme}) => theme.colors.lightPurple};
   display: flex;
   justify-content: space-between;
@@ -15,6 +15,11 @@ export const RightWrap = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-basis: 400px;
+  gap: 10px;
+
+  span {
+    white-space: nowrap;
+  }
 `;
 
 export const Logo = styled(Image)`

@@ -1,10 +1,11 @@
-import {Topbar, Title} from "./style";
+import {Topbar, Title, Nav} from "./style";
 import Bottombar from "../Bottombar";
 import {useState} from "react";
 
+export const navList = ["게시판", "마켓", "공연후기", "마이페이지", "글쓰기"];
+
 function Navbar() {
   const [navName, setNavName] = useState("게시판");
-  const navList = ["게시판", "마켓", "공연후기", "마이페이지", "글쓰기"];
 
   const showNavbar = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
     const eventTarget = e.target as HTMLElement;
@@ -14,14 +15,14 @@ function Navbar() {
   };
 
   return (
-    <nav>
+    <Nav>
       <Topbar onMouseOver={showNavbar}>
         {navList.map((name) => (
           <Title key={name}>{name}</Title>
         ))}
       </Topbar>
       <Bottombar navName={navName} />
-    </nav>
+    </Nav>
   );
 }
 

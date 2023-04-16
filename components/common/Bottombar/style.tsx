@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.ul`
   height: 50px;
-  padding: 0 5rem;
+  padding: 0 8rem;
   border-bottom: 1px solid ${({theme}) => theme.colors.whiteGray};
   display: flex;
-  /* justify-content: space-between; */
-  align-items: center;
 
+  align-items: center;
+  white-space: nowrap;
   a + a {
-    margin-left: 4rem;
+    margin-left: 5rem;
   }
 `;
 

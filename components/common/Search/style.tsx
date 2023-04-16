@@ -7,10 +7,14 @@ export const Form = styled.form`
   align-items: center;
   border-radius: 20px;
   line-height: 1.6%;
+  max-width: 300px;
+  border: 1px solid ${({theme}) => theme.colors.gray};
 `;
 
 export const Input = styled.input`
   margin-left: 2px;
   border: none;
   font-size: 1rem;
+  width: 100%;
+  outline: none;
 `;
