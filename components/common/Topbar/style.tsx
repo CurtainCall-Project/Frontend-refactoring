@@ -8,6 +8,10 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media ${({theme}) => theme.device.tablet} {
+    padding: 0 3em;
+  }
 `;
 
 export const RightWrap = styled.div`
@@ -20,8 +24,20 @@ export const RightWrap = styled.div`
   span {
     white-space: nowrap;
   }
+
+  @media ${({theme}) => theme.device.tablet} {
+    display: none;
+  }
 `;
 
 export const Logo = styled(Image)`
   display: block;
+`;
+
+export const MenuIcon = styled(Image)`
+  display: none;
+
+  @media ${({theme}) => theme.device.tablet} {
+    display: block;
+  }
 `;

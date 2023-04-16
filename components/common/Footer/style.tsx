@@ -7,10 +7,10 @@ export const Container = styled.footer`
   display: flex;
   justify-content: end;
 
-  /* @media ${({theme}) => theme.device.tablet} {
+  @media ${({theme}) => theme.device.tablet} {
     flex-direction: column;
     align-items: end;
-  } */
+  }
 
   span,
   a {

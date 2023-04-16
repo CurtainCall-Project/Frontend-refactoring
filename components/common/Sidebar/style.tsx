@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.div<{isOpen: boolean}>`
   display: none;
 
   @media ${({theme}) => theme.device.tablet} {
@@ -15,7 +15,8 @@ export const Container = styled.div`
     position: fixed;
     z-index: 2;
     top: 0;
-    right: 0;
+    right: ${({isOpen}) => (isOpen ? "0" : "-100%")};
+    transition: 0.3s;
     background-color: ${({theme}) => theme.colors.navGray};
   }
 
@@ -54,5 +55,21 @@ export const LoginLink = styled(Link)`
   margin-top: 6px;
   &:hover {
     color: ${({theme}) => theme.colors.purple};
+  }
+`;
+
+export const Overlay = styled.div<{isOpen: boolean}>`
+  display: none;
+  @media ${({theme}) => theme.device.tablet} {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    opacity: ${({isOpen}) => (isOpen ? "1" : "0")};
+    visibility: ${({isOpen}) => (isOpen ? "visible" : "hidden")};
+    background-color: rgba(0, 0, 0, 0.3);
   }
 `;
